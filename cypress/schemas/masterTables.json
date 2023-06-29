@@ -1,0 +1,56 @@
+ {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "account_extra_data_mt": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "id_field": {
+              "type": "string"
+            },
+            "id_option": {
+              "type": "string"
+            },
+            "form_order": {
+              "type": "integer"
+            },
+            "description": {
+              "type": "string"
+            },
+            "id_account_extra_data_mt": {
+              "type": "string"
+            }
+          },
+          "required": ["name", "id_field", "id_option", "form_order", "description", "id_account_extra_data_mt"]
+        }
+      },
+      "account_types": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "form_order": {
+              "type": "integer"
+            },
+            "description": {
+              "type": "string"
+            },
+            "id_account_type": {
+              "type": "string"
+            }
+          },
+          "required": ["name", "form_order", "description", "id_account_type"]
+        }
+      }  
+    },
+    "required": ["account_extra_data_mt", "account_types"]
+  }
+  
