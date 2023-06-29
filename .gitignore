@@ -1,5 +1,7 @@
+
 # Carpeta node_modules
 node_modules/
+node_modules
 
 # Archivos de respaldo de editor
 *~
